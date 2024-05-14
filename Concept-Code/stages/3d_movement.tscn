@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7ky2p2jhgdan"]
+
+[ext_resource type="PackedScene" uid="uid://j7ics54n3f1b" path="res://Concept-Code/objects/3_dbuilding.tscn" id="1_clcu2"]
+[ext_resource type="Script" path="res://Concept-Code/stages/3d_movement.gd" id="1_u1x3w"]
+
+[node name="3D_movement" type="Node3D"]
+script = ExtResource("1_u1x3w")
+
+[node name="buildingsChunk" type="Node3D" parent="."]
+
+[node name="3Dbuilding" parent="buildingsChunk" instance=ExtResource("1_clcu2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0)
+
+[node name="3Dbuilding2" parent="buildingsChunk" instance=ExtResource("1_clcu2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.07549, 0, -15.8117)
+
+[node name="3Dbuilding3" parent="buildingsChunk" instance=ExtResource("1_clcu2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -24.0128)
+
+[node name="3Dbuilding4" parent="buildingsChunk" instance=ExtResource("1_clcu2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.07091, 0, -7.96464)
+
+[node name="3Dbuilding5" parent="buildingsChunk" instance=ExtResource("1_clcu2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.07091, 0, -16.5165)
+
+[node name="3Dbuilding6" parent="buildingsChunk" instance=ExtResource("1_clcu2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.07091, 0, -34.7749)
+
+[node name="3Dbuilding7" parent="buildingsChunk" instance=ExtResource("1_clcu2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.07091, 0, -63.5444)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.26139, 9.12861)

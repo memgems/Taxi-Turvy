@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://j7ics54n3f1b"]
+
+[ext_resource type="Texture2D" uid="uid://cskp6i7ncjkga" path="res://Concept-Code/assets/building side.png" id="1_7uvsh"]
+[ext_resource type="Texture2D" uid="uid://b7qiq0pqef6kl" path="res://Concept-Code/assets/sample_building_front.png" id="2_ssjan"]
+
+[node name="3Dbuilding" type="Node3D"]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.50854, 6.76331, 0)
+texture = ExtResource("1_7uvsh")
+
+[node name="Sprite3D2" type="Sprite3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.125753, 7.14473, -3.73971)
+texture = ExtResource("2_ssjan")
+region_enabled = true
+region_rect = Rect2(2192.74, 258.583, 805.07, 1481.03)
+
+[node name="Sprite3D3" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.50854, 6.76331, -7.47314)
+texture = ExtResource("1_7uvsh")
