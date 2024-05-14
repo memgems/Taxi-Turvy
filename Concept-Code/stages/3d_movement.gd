@@ -8,5 +8,5 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	$buildingsChunk.position += Vector3(0,0,delta*speed)
+	$Camera3D.position -= Vector3(0,0,delta*speed)
 	pass
