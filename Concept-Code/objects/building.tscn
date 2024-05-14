@@ -1,0 +1,49 @@
+[gd_scene load_steps=4 format=3 uid="uid://dtha5cy2atmy6"]
+
+[ext_resource type="Texture2D" uid="uid://cskp6i7ncjkga" path="res://Concept-Code/assets/building side.png" id="1_j68po"]
+[ext_resource type="Texture2D" uid="uid://con8211h2bhb" path="res://Concept-Code/assets/warped_sample_building_front.png" id="2_wg2lm"]
+
+[sub_resource type="GDScript" id="GDScript_k1qie"]
+script/source = "extends Node2D
+
+var speed = .2
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	#scale += Vector2(delta*speed, delta*speed)
+	#position += Vector2(-speed,0)
+	pass
+"
+
+[node name="building" type="Node2D"]
+scale = Vector2(0.05, 0.0496862)
+script = SubResource("GDScript_k1qie")
+
+[node name="side_face" type="Sprite2D" parent="."]
+position = Vector2(-145.583, -252.337)
+scale = Vector2(0.332572, 0.363554)
+texture = ExtResource("1_j68po")
+
+[node name="warped_front" type="Sprite2D" parent="."]
+position = Vector2(85.4172, -271.337)
+scale = Vector2(0.363336, 0.363336)
+texture = ExtResource("2_wg2lm")
+
+[node name="discription" type="Label" parent="."]
+visible = false
+offset_left = 1200.0
+offset_top = -1711.0
+offset_right = 1517.0
+offset_bottom = -1610.0
+scale = Vector2(8.5051, 10.5192)
+text = "Info 
+- Centered At Horizon Line 
+- Warped to converge on vanashing point
+- fit  in under 12 pixel width 
+-actual measuements will need adjusting"

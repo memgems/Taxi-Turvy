@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cuibns5cd24xf"]
+
+[ext_resource type="Script" path="res://Concept-Code/stages/sample_movement.gd" id="1_o58bp"]
+
+[node name="sample_movement" type="Node"]
+script = ExtResource("1_o58bp")
+
+[node name="vanashing_point" type="Node2D" parent="."]
+position = Vector2(566, 323)
