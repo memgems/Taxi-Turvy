@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://3w1q2nivju5s"]
+
+[ext_resource type="PackedScene" uid="uid://cin6875pboecp" path="res://Concept-Code/objects/road.tscn" id="2_i1qd1"]
+
+[node name="Tiles" type="Node3D"]
+
+[node name="Road" parent="." instance=ExtResource("2_i1qd1")]

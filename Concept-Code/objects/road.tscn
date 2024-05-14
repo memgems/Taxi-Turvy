@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://cin6875pboecp"]
+
+[ext_resource type="Texture2D" uid="uid://ds5tp8wl6o718" path="res://Concept-Code/assets/road.png" id="1_70yf7"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i7exp"]
+albedo_texture = ExtResource("1_70yf7")
+
+[sub_resource type="BoxMesh" id="BoxMesh_22ul0"]
+material = SubResource("StandardMaterial3D_i7exp")
+size = Vector3(7, 0, 7)
+
+[node name="Road" type="MeshInstance3D"]
+mesh = SubResource("BoxMesh_22ul0")

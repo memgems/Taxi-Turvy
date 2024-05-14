@@ -1,10 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://c7ky2p2jhgdan"]
+[gd_scene load_steps=5 format=3 uid="uid://cvofbj8wxi06y"]
 
-[ext_resource type="PackedScene" uid="uid://j7ics54n3f1b" path="res://Concept-Code/objects/3_dbuilding.tscn" id="1_clcu2"]
+[ext_resource type="PackedScene" uid="uid://dcsi1btrfykg0" path="res://Concept-Code/objects/3_dbuilding.tscn" id="1_clcu2"]
 [ext_resource type="Script" path="res://Concept-Code/stages/3d_movement.gd" id="1_u1x3w"]
+[ext_resource type="MeshLibrary" uid="uid://dyslvs82clr2c" path="res://Concept-Code/assets/tiles.tres" id="3_icx2j"]
+
+[sub_resource type="Environment" id="Environment_ekwfi"]
+ambient_light_source = 3
+ambient_light_color = Color(1, 1, 1, 1)
 
 [node name="3D_movement" type="Node3D"]
 script = ExtResource("1_u1x3w")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_ekwfi")
 
 [node name="buildingsChunk" type="Node3D" parent="."]
 
@@ -30,4 +38,11 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.0709
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.07091, 0, -63.5444)
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.26139, 9.12861)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.899134, 2.26139, 9.12861)
+
+[node name="GridMap" type="GridMap" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+mesh_library = ExtResource("3_icx2j")
+data = {
+"cells": PackedInt32Array(65535, 7, 0, 65535, 4, 0, 65535, 1, 0, 65535, 65534, 0, 65535, 65531, 0, 65535, 65528, 0, 65535, 65525, 0, 65535, 65522, 0, 65535, 65519, 0, 65535, 65516, 0, 65535, 65513, 0, 65535, 65510, 0)
+}
