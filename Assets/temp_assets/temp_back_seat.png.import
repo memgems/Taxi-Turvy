@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cj1272odh2nmu"
-path="res://.godot/imported/temp_wheel.png-0ab1c450f33904305f3c2ea1a85aa63e.ctex"
+uid="uid://b5b2d6u0iqo5c"
+path="res://.godot/imported/temp_back_seat.png-780ce8daf40ec053918cc13b90945704.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Taxi_Interior/Assets/temp_assets/temp_wheel.png"
-dest_files=["res://.godot/imported/temp_wheel.png-0ab1c450f33904305f3c2ea1a85aa63e.ctex"]
+source_file="res://Assets/temp_assets/temp_back_seat.png"
+dest_files=["res://.godot/imported/temp_back_seat.png-780ce8daf40ec053918cc13b90945704.ctex"]
 
 [params]
 

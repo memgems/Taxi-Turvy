@@ -1,4 +1,4 @@
-extends PathFollow2D
+extends Node3D
 
 
 # Called when the node enters the scene tree for the first time.
@@ -8,8 +8,10 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	progress += .2
-	scale += Vector2(.01, .01)
-	if(progress_ratio == 1):
-		queue_free()
 	pass
+	
+func _on_straight_body_entered(body):
+	var new_node = self.duplicate()
+	get_parent().add_child(new_node)
+	new_node.position = $straight_spawn.position
+	pass # Replace with function body.

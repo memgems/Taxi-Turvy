@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7qiq0pqef6kl"
-path.s3tc="res://.godot/imported/sample_building_front.png-13c36bcd149a1e805d37b6873862f4f5.s3tc.ctex"
+uid="uid://bm7lelyt67u6u"
+path.s3tc="res://.godot/imported/temp_interior.png-c9c7c74d15998a78f89b67e75a31cce5.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Concept-Code/assets/sample_building_front.png"
-dest_files=["res://.godot/imported/sample_building_front.png-13c36bcd149a1e805d37b6873862f4f5.s3tc.ctex"]
+source_file="res://Assets/temp_assets/temp_interior.png"
+dest_files=["res://.godot/imported/temp_interior.png-c9c7c74d15998a78f89b67e75a31cce5.s3tc.ctex"]
 
 [params]
 

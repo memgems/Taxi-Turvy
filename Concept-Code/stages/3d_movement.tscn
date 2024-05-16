@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://cvofbj8wxi06y"]
 
-[ext_resource type="PackedScene" uid="uid://dcsi1btrfykg0" path="res://Concept-Code/objects/3_dbuilding.tscn" id="1_clcu2"]
+[ext_resource type="PackedScene" uid="uid://dcsi1btrfykg0" path="res://Concept-Code/objects/temp_building.tscn" id="1_clcu2"]
 [ext_resource type="Script" path="res://Concept-Code/stages/3d_movement.gd" id="1_u1x3w"]
 [ext_resource type="MeshLibrary" uid="uid://dyslvs82clr2c" path="res://Concept-Code/assets/tiles.tres" id="3_icx2j"]
 [ext_resource type="PackedScene" uid="uid://c4tsg7v7h8i2b" path="res://Concept-Code/objects/taxi.tscn" id="4_7j2ty"]

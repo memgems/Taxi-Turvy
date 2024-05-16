@@ -2,20 +2,21 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ds5tp8wl6o718"
-path="res://.godot/imported/road.png-a6287cbd45fe3d5b63e185f8c57826d0.ctex"
+uid="uid://cskp6i7ncjkga"
+path.s3tc="res://.godot/imported/building side.png-3482279a89df1d670082f9eca80ba331.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]
 
-source_file="res://Concept-Code/assets/road.png"
-dest_files=["res://.godot/imported/road.png-a6287cbd45fe3d5b63e185f8c57826d0.ctex"]
+source_file="res://Assets/temp_assets/building side.png"
+dest_files=["res://.godot/imported/building side.png-3482279a89df1d670082f9eca80ba331.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

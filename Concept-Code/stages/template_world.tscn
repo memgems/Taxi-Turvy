@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://8w5ugnsds82p"]
+
+[ext_resource type="Script" path="res://Concept-Code/stages/template_world.gd" id="1_qm2y1"]
+[ext_resource type="PackedScene" uid="uid://x5w5yj8a4qa" path="res://Concept-Code/objects/chunk_loader.tscn" id="2_ls55s"]
+[ext_resource type="PackedScene" uid="uid://c4tsg7v7h8i2b" path="res://Concept-Code/objects/taxi.tscn" id="3_nxxbp"]
+
+[sub_resource type="Environment" id="Environment_8nxse"]
+ambient_light_source = 3
+ambient_light_color = Color(1, 1, 1, 1)
+
+[node name="template_world" type="Node3D"]
+script = ExtResource("1_qm2y1")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_8nxse")
+
+[node name="chunkLoader" parent="." instance=ExtResource("2_ls55s")]
+
+[node name="taxi" parent="." instance=ExtResource("3_nxxbp")]
