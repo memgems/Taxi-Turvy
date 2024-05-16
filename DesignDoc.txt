@@ -1,0 +1,40 @@
+
+# WORLD
+	As the player dives through the world. New random chunks are spawned in the direction they are driving. 
+	
+	## CHUNK
+		Node3D 
+		contains road with intersection at center 
+			// intersection may need to be seperate scene (maybe parent???)
+		buildings + other sprites line the stree 
+		upon leaving a chunk delete it
+		
+		### INTERSECTION 
+			At an itersection user is pre prompted with direction of travel. 
+			If turning user will rotate 90deg around corner 
+			Upon passing through intersection spawn new chunk in direction of travel
+
+# TAXI
+	CharacterBody3D 
+	
+	## MOVEMENT
+		on event accelerate increase velocity 
+		on event deaccelerate decrease velocity 
+		always while velocity is > 0 decrease velocity by small amount e.g. natural slow down / friction
+	
+	## INTERIOR
+		buttons for various request eg: temp, radio, turning ... 
+		
+		### REAR VIEW MIRROR
+			contains a subviewport of behind // low priority 
+			Expands when Passenger speaks/makes request 
+			contains sprite of passenger when inside
+
+# PASSENGERS 
+	Appear in world to be picked up. When stopped next to them prompted to allow into car. 
+	Appears inside car 
+		randomly prompt turns 
+		randomly prompt to be let off
+		randomly asks for task eg. temp, radio, turning ... 
+		*** these prompts can be scripted in the taxi script***
+	Keep track of happiness *** also ^^ 
