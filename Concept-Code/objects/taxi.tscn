@@ -1,16 +1,48 @@
-[gd_scene load_steps=4 format=3 uid="uid://c4tsg7v7h8i2b"]
+[gd_scene load_steps=6 format=3 uid="uid://c4tsg7v7h8i2b"]
 
 [ext_resource type="Texture2D" uid="uid://bm7lelyt67u6u" path="res://Taxi_Interior/Assets/temp_assets/temp_interior.png" id="1_ahase"]
 [ext_resource type="Script" path="res://Concept-Code/objects/taxi.gd" id="2_dgs2y"]
 [ext_resource type="Texture2D" uid="uid://cj1272odh2nmu" path="res://Taxi_Interior/Assets/temp_assets/temp_wheel.png" id="3_kb2nb"]
+[ext_resource type="Texture2D" uid="uid://b5b2d6u0iqo5c" path="res://Taxi_Interior/Assets/temp_assets/temp_back_seat.png" id="4_s7hne"]
+[ext_resource type="Texture2D" uid="uid://64blukwstd13" path="res://Taxi_Interior/Assets/temp_assets/temp_rear_view_mirror.png" id="5_e61fa"]
 
-[node name="Taxi" type="Sprite2D"]
-position = Vector2(0, -29)
-scale = Vector2(0.232326, 0.232326)
-texture = ExtResource("1_ahase")
-centered = false
+[node name="Taxi" type="Node2D"]
 script = ExtResource("2_dgs2y")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(1433.33, 2294.19)
+[node name="Taxi" type="Sprite2D" parent="."]
+position = Vector2(0, -19)
+scale = Vector2(0.232326, 0.198974)
+texture = ExtResource("1_ahase")
+centered = false
+
+[node name="wheel" type="Sprite2D" parent="."]
+position = Vector2(333, 449)
+scale = Vector2(0.232326, 0.232326)
 texture = ExtResource("3_kb2nb")
+
+[node name="rear_view_mirror" type="Node2D" parent="."]
+position = Vector2(557, 2)
+scale = Vector2(0.267037, 0.267037)
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="rear_view_mirror"]
+offset_left = -816.367
+offset_top = 146.047
+offset_right = 827.633
+offset_bottom = 658.047
+
+[node name="SubViewport" type="SubViewport" parent="rear_view_mirror/SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(1644, 400)
+render_target_update_mode = 4
+
+[node name="Camera3D" type="Camera3D" parent="rear_view_mirror/SubViewportContainer/SubViewport"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 2.2, 0)
+
+[node name="TempBackSeat" type="Sprite2D" parent="rear_view_mirror"]
+position = Vector2(-1.00006, 356)
+scale = Vector2(0.466167, 0.466167)
+texture = ExtResource("4_s7hne")
+
+[node name="TempRearViewMirror" type="Sprite2D" parent="rear_view_mirror"]
+position = Vector2(-5, 271)
+texture = ExtResource("5_e61fa")
