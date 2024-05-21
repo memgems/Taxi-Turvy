@@ -20,11 +20,15 @@ func load_new_chunk(spawn_location: Vector2):
 	var instance = chunk.instantiate()
 	add_child(instance)
 	instance.position = spawn_location
+	instance.get_node(\"temp chunk/straight/CollisionShape3D\").position = spawn_location
 "
 
 [node name="chunkLoader" type="Node3D"]
 script = SubResource("GDScript_qudv1")
 
 [node name="temp chunk" parent="." instance=ExtResource("1_xgogl")]
+
+[node name="CollisionShape3D" parent="temp chunk/straight" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.40593, 2.5376, 0.0639038)
 
 [editable path="temp chunk"]

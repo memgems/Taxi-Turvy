@@ -1,4 +1,6 @@
 
+DESIGN DOCUMENTATION 
+
 # WORLD
 	As the player dives through the world. New random chunks are spawned in the direction they are driving. 
 	
@@ -21,7 +23,7 @@
 		on event accelerate increase velocity 
 		on event deaccelerate decrease velocity 
 		always while velocity is > 0 decrease velocity by small amount e.g. natural slow down / friction
-	
+
 	## INTERIOR
 		buttons for various request eg: temp, radio, turning ... 
 		
@@ -36,5 +38,5 @@
 		randomly prompt turns 
 		randomly prompt to be let off
 		randomly asks for task eg. temp, radio, turning ... 
-		*** these prompts can be scripted in the taxi script***
+		*** these prompts can be scripted in the taxi script ***
 	Keep track of happiness *** also ^^ 

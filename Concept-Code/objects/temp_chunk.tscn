@@ -5,8 +5,8 @@
 [ext_resource type="PackedScene" uid="uid://cin6875pboecp" path="res://Concept-Code/objects/road.tscn" id="2_jg31c"]
 [ext_resource type="PackedScene" uid="uid://yo1wkvysfp2a" path="res://Concept-Code/objects/intersection.tscn" id="4_1fw8l"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_vfg0e"]
-size = Vector3(7.34741, 5.52832, 1.12781)
+[sub_resource type="BoxShape3D" id="BoxShape3D_8chlu"]
+size = Vector3(10.687, 9.26843, 1)
 
 [node name="temp chunk" type="Node3D"]
 script = ExtResource("1_3qe2o")
@@ -145,7 +145,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -94)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -46.6665)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="straight"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.289673, 2.26416, 0.0639038)
-shape = SubResource("BoxShape3D_vfg0e")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.436768, 4.13422, 0)
+shape = SubResource("BoxShape3D_8chlu")
 
 [connection signal="body_entered" from="straight" to="." method="_on_straight_body_entered"]
